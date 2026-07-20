@@ -6,7 +6,7 @@
 #    cv2.waitKey(1)
 
 
-import cv2
+import cv2 # type: ignore
 cam = cv2.VideoCapture(0)
 while True:
     _, frame = cam.read()
