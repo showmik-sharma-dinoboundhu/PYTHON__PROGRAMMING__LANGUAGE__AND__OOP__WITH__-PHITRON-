@@ -6,3 +6,4 @@ class phone:
 
 my_phone = phone.brand,phone.price,phone.charger,phone.color
 print(my_phone)
+
