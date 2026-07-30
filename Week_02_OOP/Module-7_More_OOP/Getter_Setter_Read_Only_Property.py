@@ -1,3 +1,8 @@
+# read only --> You can't set the value. value can't be changed
+#Getter --> get a value of a property through a method. Most of the time, you will get the value of a private attribute
+#Setter --> Seta vlue of a property through a method. Most of the time, you will set the value of a private property.
+
+
 class user:
     def __init__(self,name,age,money) -> None:
         self._name = name
