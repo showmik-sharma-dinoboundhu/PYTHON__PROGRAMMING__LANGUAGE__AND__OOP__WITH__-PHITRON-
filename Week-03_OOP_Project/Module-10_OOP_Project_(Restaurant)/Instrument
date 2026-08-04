@@ -1,0 +1,22 @@
+Restuarant classes:-
+1. user : base class(ABC)
+2. customer(user)
+3. Employee(user)
+4. chef(Employee)
+5. server(Employee)
+6. manager(Employee)
+7. cleaner(Employee)
+8. supplier(user)
+9. marketer(user)
+
+FoodItem classes:-
+1. FoodItem(ABC)
+2. pizza(FoodItem)
+3. burger(FoodItem)
+4. drinks(FoodItem)
+5. juice(FoodItem)
+6. salad(FoodItem)
+
+Order:-
+
+Restuarant:-
