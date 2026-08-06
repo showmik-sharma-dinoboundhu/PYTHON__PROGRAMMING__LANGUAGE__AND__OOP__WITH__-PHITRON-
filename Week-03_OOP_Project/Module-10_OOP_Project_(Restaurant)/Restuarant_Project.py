@@ -11,6 +11,7 @@ class Customer(User):
     def __init__(self, name, phone, email, address, money) -> None:
         self.wallet = money
         self.__order = None
+        self.due_amount = 0
         super().__init__(name, phone, email, address)
 
     @property
@@ -23,7 +24,8 @@ class Customer(User):
 
     def place_order(self, order):
         self.order = order
-        print(f"{self.name} placed in order")
+        self.due_amount +=  order.bill
+        print(f"{self.name} placed in order with bill {order.bill}")
 
     def eat_food(self, order):
         print(f"{self.name} of item food {order.items}")

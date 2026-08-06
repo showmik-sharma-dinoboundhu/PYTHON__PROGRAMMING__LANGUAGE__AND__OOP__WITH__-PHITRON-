@@ -1,6 +1,7 @@
 from Menu import Pizza, Burger, Drinks, Menu
 from Restuarant_sub import Restuarant
 from Restuarant_Project import Chef, Customer, Server, Manager
+from Order import Order
 
 def Main():
     menu = Menu()
@@ -42,8 +43,44 @@ def Main():
     restuarant.add_employee("server", server)
 
     # Show Employees:
-    restuarant.add_employee("server",server)
     restuarant.show_employees()
+
+    # Customer 1 placing an order
+    customer_1 = Customer("Sakib al Hasan", 456734356, "Sakib@m.com", "Banani", 1000000)
+    order_1 =  Order(customer_1, [pizza_3, coffee])
+    customer_1.pay_for_order(order_1)
+    restuarant.add_order(order_1)
+
+    # Customer 1 paying for order_1:
+    restuarant.receive_payment(order_1, 2000, customer_1)
+
+    print("Revenue & Balance After First Customer : ", restuarant.revenue, restuarant.balance)
+
+
+    # Customer 2 placing an order
+    customer_2 = Customer("Mashrafe Bin Mortaza", 454398586, "Sakib@m.com", "Banani", 1000000)
+    order_2 =  Order(customer_2, [pizza_1, burger_2, coffee])
+    customer_2.pay_for_order(order_2)
+    restuarant.add_order(order_2)
+
+  # Customer 1 paying for order_1:
+    restuarant.receive_payment(order_2, 3000, customer_2)    
+    print("Revenue & Balance After Second Customer : ", restuarant.revenue, restuarant.balance)
+
+
+
+
+    # Pay rent:
+    restuarant.pay_expense(restuarant.rent,"Rent")
+    print("After Rent : ", restuarant.revenue, restuarant.balance, restuarant.expense)
+
+
+
+    restuarant.pay_salary(chef)
+    print("After salary : ", restuarant.revenue, restuarant.balance, restuarant.expense)
+
+
+
 
 
     # print("Main As CPP")
