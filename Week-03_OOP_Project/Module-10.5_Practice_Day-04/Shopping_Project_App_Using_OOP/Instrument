@@ -1,0 +1,9 @@
+1. Customer-
+    new-account, name, email, passwaord
+
+2. Sellers-
+    new-account, name, products_to_Sell
+
+3. Customer can see products
+    place order
+    if monitor the stock don't show stock out of products
