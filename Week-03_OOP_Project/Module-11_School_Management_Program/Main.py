@@ -29,7 +29,7 @@ def main():
    school.student_admission(ohir)
 
 
-    # Subject
+   # Subject
    physics_teacher = Teacher("Samir Baran Das")
    physics = Subject("Physics", physics_teacher)
    eight.add_subject(physics)
@@ -42,9 +42,9 @@ def main():
    Biology = Subject("Biology", Biology_teacher)
    eight.add_subject(Biology)
 
-
+   eight.take_semester_final()
 
    print(school)
 
 if __name__ == "__main__":
-    main()
+   main()
