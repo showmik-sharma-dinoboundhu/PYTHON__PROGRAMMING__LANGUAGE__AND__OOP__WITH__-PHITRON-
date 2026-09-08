@@ -1,0 +1,17 @@
+Three types have Relatiion in OOP-
+1. Association-
+Two objects are related but can exist independently
+car is car if its have driver or not.
+classroom is class or classroom if its have teacher or not.
+
+
+2. Aggregation -
+A collection.
+Like class is collection of students.
+
+
+3. Compositon - 
+means must a major part should be there.
+Like humans major part is "Heart"
+
+Compositon(Root/stronger)--> Aggregation(parents/Less stronger than Compositon)-->Association(child/Less stronger than Aggregation)
